@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación al Baby Shower de Lía</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+        .font-pacifico {
+            font-family: 'Pacifico', cursive;
+        }
+    </style>
+</head>
+<body class="bg-pink-50 flex items-center justify-center min-h-screen p-4">
+
+    <!-- Card Container -->
+    <div class="bg-white rounded-2xl shadow-2xl max-w-sm w-full overflow-hidden transform transition-all hover:scale-105 duration-300">
+        
+        <!-- Panda Image Section -->
+        <div class="bg-emerald-100 p-6 flex justify-center">
+            <!-- Simple SVG of a cute baby panda -->
+            <svg class="w-40 h-40" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <radialGradient id="grad-ear" cx="50%" cy="50%" r="50%" fx="65%" fy="65%">
+                        <stop offset="0%" style="stop-color:rgb(60,60,60);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:rgb(20,20,20);stop-opacity:1" />
+                    </radialGradient>
+                    <radialGradient id="grad-face" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                        <stop offset="85%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:rgb(230,230,230);stop-opacity:1" />
+                    </radialGradient>
+                </defs>
+                <!-- Head -->
+                <circle cx="100" cy="110" r="70" fill="url(#grad-face)" />
+                <!-- Ears -->
+                <circle cx="45" cy="60" r="25" fill="url(#grad-ear)" />
+                <circle cx="155" cy="60" r="25" fill="url(#grad-ear)" />
+                <!-- Eye Patches -->
+                <ellipse cx="75" cy="100" rx="18" ry="25" fill="#333" transform="rotate(-20 75 100)" />
+                <ellipse cx="125" cy="100" rx="18" ry="25" fill="#333" transform="rotate(20 125 100)" />
+                <!-- Eyes -->
+                <circle cx="77" cy="102" r="5" fill="white" />
+                <circle cx="123" cy="102" r="5" fill="white" />
+                <!-- Nose and Mouth -->
+                <path d="M100 120 q -5 5 -10 0 q 5 5 10 0" fill="#333" />
+                <path d="M100 122.5 v 10" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+                <path d="M90 135 c 5 -5, 15 -5, 20 0" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round"/>
+                 <!-- Blush -->
+                <circle cx="60" cy="125" r="10" fill="pink" opacity="0.6"/>
+                <circle cx="140" cy="125" r="10" fill="pink" opacity="0.6"/>
+            </svg>
+        </div>
+
+        <!-- Text Content Section -->
+        <div class="p-8 text-center text-gray-700">
+            <p class="text-lg mb-2">¡Tenemos una gran noticia que celebrar!</p>
+            <p class="mb-4">Te invitamos con mucho cariño al Baby Shower de la pequeña</p>
+            
+            <h1 class="font-pacifico text-6xl text-pink-400 my-4">¡Lía!</h1>
+            
+            <p class="mb-6">Acompáñanos a darle la bienvenida en este día tan especial.</p>
+            
+            <div class="text-left bg-gray-50 p-4 rounded-lg border-l-4 border-emerald-300 space-y-3 mb-6">
+                <div>
+                    <strong class="text-emerald-600">Fecha:</strong>
+                    <p>15 de noviembre de 2025</p>
+                </div>
+                <div>
+                    <strong class="text-emerald-600">Hora:</strong>
+                    <p>5:00 PM</p>
+                </div>
+                <div>
+                    <strong class="text-emerald-600">Lugar:</strong>
+                    <p>Juan Aldama Manzana 031, 50640 San Felipe del Progreso, Méx.</p>
+                </div>
+            </div>
+
+            <p class="mb-4">¡Esperamos contar con tu presencia para compartir nuestra alegría!</p>
+            
+            <p class="text-sm text-gray-500 mb-6">Por favor, confirma tu asistencia para una mejor organización.</p>
+            
+            <p class="font-bold text-xl text-pink-500">¡Te esperamos!</p>
+        </div>
+    </div>
+
+</body>
+</html>
